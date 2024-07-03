@@ -1,20 +1,16 @@
-<?php
-if(!file_exists("install.lock")){
-header("Refresh:0;url=\"./install.php\"");
-exit("正在跳转到安装界面...");
-}else{
-}
-require_once('header.php');
-echo <<<EOF
-<br />
-<div class="mdui">
- 
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>导航页</title>
-    <style>
+<html><head>
+    <meta charset="utf-8">
+    <title>蓝惠引导页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="蓝惠引导页">
+    <meta name="keywords" content="蓝惠引导页">
+    <meta name="author" content="BOX STUDIO">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles/master.css">
+</head>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
