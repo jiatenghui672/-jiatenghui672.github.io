@@ -1,129 +1,145 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大气导航页面</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高端导航页面</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    .search-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .search-input {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px 0 0 4px;
+    }
+    .search-select {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+    }
+    .search-button {
+        padding: 10px 20px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column {
+        flex-basis: 48%;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .column h2 {
+        margin-top: 0;
+    }
+    .links {
+        list-style: none;
+        padding: 0;
+    }
+    .links li {
+        margin-bottom: 10px;
+    }
+    .links a {
+        text-decoration: none;
+        color: #333;
+    }
+    @media (max-width: 768px) {
+        .columns {
+            flex-direction: column;
         }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .column {
+            flex-basis: auto;
         }
-        .search-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .search-box {
-            flex-grow: 1;
-            padding: 10px;
-            font-size: 16px;
-            border: 2px solid #ddd;
-            border-radius: 5px 0 0 5px;
-            outline: none;
-        }
-        .search-engine-select {
-            padding: 10px;
-            font-size: 16px;
-            border: 2px solid #ddd;
-            border-left: none;
-            border-radius: 0 5px 5px 0;
-            outline: none;
-            cursor: pointer;
-        }
-        .search-btn {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #5cb85c;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-        .search-btn:hover {
-            background-color: #4cae4c;
-        }
-        .links-container {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .link-category {
-            flex-basis: 50%;
-            padding: 10px;
-        }
-        .link-category h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .link-category a {
-            display: block;
-            margin-bottom: 5px;
-            color: #666;
-            text-decoration: none;
-        }
-        .link-category a:hover {
-            color: #333;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="search-container">
-            <input type="text" id="search-box" class="search-box" placeholder="输入搜索内容">
-            <select id="search-engine" class="search-engine-select">
-                <option value="bing">Bing</option>
-                <option value="google">Google</option>
-                <option value="baidu">Baidu</option>
-                <option value="yahoo">Yahoo</option>
-            </select>
-            <button class="search-btn" onclick="submitSearch()">搜索</button>
-        </div>
-
-        <div class="links-container">
-            <div class="link-category">
-                <h2>视频网站</h2>
-                <a href="https://www.youtube.com" target="_blank">YouTube</a>
-                <a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a>
-                <a href="https://www.twitch.tv" target="_blank">Twitch</a>
-            </div>
-            <div class="link-category">
-                <h2>社交媒体</h2>
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                <a href="https://www.twitter.com" target="_blank">Twitter</a>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            </div>
-            <!-- 更多栏目可以在这里添加 -->
-        </div>
+<div class="container">
+    <div class="search-box">
+        <input type="text" id="search-input" class="search-input" placeholder="输入搜索内容">
+        <select id="search-engine" class="search-select">
+            <option value="https://www.bing.com/search?q=">必应</option>
+            <option value="https://search.yahoo.com/search?p=">雅虎</option>
+            <option value="https://yandex.eu/search/?text=yandex.ee">yandex</option>
+            <option value="https://www.google.com/search?q=">谷歌</option>
+            
+            
+        </select>
+        <button class="search-button" onclick="search()">搜索</button>
     </div>
+    <div class="columns">
+        <div class="column">
+            <h2>视频网站</h2>
+            <ul class="links">
+                <li><a href="https://www.bilibili.com/" target="_blank"> B站</a></li>
+                <li><a href="https://www.dadagui.me/" target="_blank">DADAGUI</a></li>
+                <li><a href="https://www.xbshares.cc/" target="_blank"> 新小兵分享</a></li>
+                <li><a href="https://www.kgvod.com/" target="_blank"> 发烧屋</a></li>
+                <li><a href="https://www.haopb.com/" target="_blank"> 吧影院</a></li>
+                <li><a href="https://www.cilixiong.com/" target="_blank">磁力熊 </a></li>
+                <li><a href="https://xn--p3tv7h.com/" target="_blank"> 影搜</a></li>
+                <li><a href="https://www.keke2.app/" target="_blank"> 可可影视</a></li>
+                <li><a href="https://jqqzx.cc/" target="_blank">剧圈圈</a></li>
+                <li><a href="https://www.douyin.com/" target="_blank"> 抖音</a></li>
+                <li><a href="" target="_blank"> </a></li>
+                <li><a href="" target="_blank"> </a></li>
+                <li><a href="" target="_blank"> </a></li>
+                <li><a href="" target="_blank"> </a></li>
 
-    <script>
-        function submitSearch() {
-            let query = document.getElementById('search-box').value;
-            let engine = document.getElementById('search-engine').value;
-            let searchUrl = '';
-            switch (engine) {
-                case 'bing':
-                    searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-                    break;
-                case 'google':
-                    searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-                    break;
-                case 'baidu':
-                    searchUrl = `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`;
-                    break;
-                case 'yahoo':
-                    searchUrl = `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`;
-                    break;
-                default:
-                    searchUrl
+
+
+                <li><a href="https://u.duboku.io/vodtype/1.html" target="_blank">独播库</a></li>
+                <li><a href="https://anime1.cc/" target="_blank">anime1</a></li>
+                <li><a href="https://www.mxdmp.com/" target="_blank">xdmp</a></li>
+                <li><a href="https://u.duboku.io/vodtype/1.html" target="_blank">独播库</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>社交媒体</h2>
+            <ul class="links">
+                <li><a href="https://shitoubaike.org/" style="color:blue;">石头百科</a></li>
+                <li><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
+                <!-- 更多链接 -->
+                <li><a href="https://dl.kkys3.com:51111//" target="_blank"> 可可影视发布页</a></li>
+                <li><a href="https://link3.cc/jqqzx" target="_blank">剧圈圈发布页</a></li>
+            </ul>
+        </div>
+        <!-- 更多栏目 -->
+    </div>
+</div>
+<script>
+    function search() {
+        var query = document.getElementById('search-input').value;
+        var engine = document.getElementById('search-engine').value;
+        var searchUrl = engine + encodeURIComponent(query);
+        window.open(searchUrl, '_blank');
+    }
+</script>
+</body>
+</html>

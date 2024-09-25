@@ -1,193 +1,145 @@
- 
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>导航页</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('your-background-image.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-        }
-        .link-group {
-            display: flex;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高端导航页面</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    .search-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .search-input {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px 0 0 4px;
+    }
+    .search-select {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+    }
+    .search-button {
+        padding: 10px 20px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column {
+        flex-basis: 48%;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .column h2 {
+        margin-top: 0;
+    }
+    .links {
+        list-style: none;
+        padding: 0;
+    }
+    .links li {
+        margin-bottom: 10px;
+    }
+    .links a {
+        text-decoration: none;
+        color: #333;
+    }
+    @media (max-width: 768px) {
+        .columns {
             flex-direction: column;
-            margin: 10px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 5px;
-            padding: 10px;
         }
-        .link-group h3 {
-            margin: 0;
-            padding: 0;
+        .column {
+            flex-basis: auto;
         }
-        .link-group a {
-            display: block;
-            margin-top: 5px;
-            text-decoration: none;
-            color: #333;
-        }
-        .link-group a:hover {
-            color: #f00;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-    
-    
-    
-        
-        
-        
-        
-        
-         <div class="link-group">
-<div>
-        <h3>搜索引擎</h3>
-        <strong><a href="https://cn.bing.com/?FORM=BEHPTB" style="color:blue;">必应</a></strong>
-        <strong><a href="https://yandex.ee/" style="color:blue;">Yandex</a></strong>
-        
-        <strong><a href="https://www.sogou.com/" style="color:blue;">搜狗</a></strong>
-        <strong><a href="https://www.google.com/" style="color:blue;">Google</a></strong>
-         <strong><a href="https://shitoubaike.org/" style="color:blue;">石头百科</a></strong>
-</div>
-        </div>
-
-
-
-
-
-
-        
-        
-        
-        
-        
-         <div class="link-group">
-            <h3>工具网站</h3>
-             <strong><a href="https://fanyi.baidu.com/mtpe-individual/multimodal#/" style="color:red;">翻译</a></strong>
-             <a href="https://chat.openai.com.do/"chatgpt吧</a>
-             <strong><a href="https://www.lddgo.net/common/countdown" style="color:blue;">倒计时网站等</a></strong>
-
+<div class="container">
+    <div class="search-box">
+        <input type="text" id="search-input" class="search-input" placeholder="输入搜索内容">
+        <select id="search-engine" class="search-select">
+            <option value="https://www.bing.com/search?q=">必应</option>
+            <option value="https://search.yahoo.com/search?p=">雅虎</option>
+            <option value="https://yandex.eu/search/?text=yandex.ee">yandex</option>
+            <option value="https://www.google.com/search?q=">谷歌</option>
             
-            <a href="https://link3.cc/zyjj">照妖镜</a>
-            <a href="http://so.tx32.cn/#">云盘搜索</a>
-            <a href="https://www.423down.com/">432下载</a>
-            <a href="http://www.9dmsgame.net/">9dm单机</a>
-            <a href="https://home.gamer.com.tw/creation.php?owner=s6842LBJ">哈姆雷特fq</a>
-             <a href="https://www.v2aky.com/#/register?code=TRU0Gr0M">好用机场</a>
-             <a href="https://devtool.tech/html-md">HTML/URL To Markdown</a>
-             <a href="https://encycolorpedia.cn">颜色代码查询</a>
-             <a href=" https://web.koodoreader.com/#/manager/home">电子书阅读器</a>  
-              <a href="https://compress-video-online.com/zh"  >视频压缩</a>  
-              <a href="https://www.haogeduo.com/"  >好歌多下载</a> 
-         
-        </div>
-       
-     
-     
-         <div class="link-group">
-        
-        
-        
-        
-        <h3>视频网站</h3>
-            <a href="https://v.qq.com/">腾讯视频</a>
-            <a href="https://cn.chinaq.biz/dm/cn240428/9.html#2">chinaq</a>
-            <a href="https://www.youtube.com/">youtube</a>
-            <a href="https://vidhub.me">vidhub</a>
-            <a href="https://www.acfun.cn/">A站</a>
-            <a href="https://www.bilibili.com/">B站</a>
-            <a href="https://www.ixigua.com/">西瓜视频</a>
-            <a href="https://www.douyin.com/">抖音</a>
-            <a href="https://anime1.cc/">anime1.cc</a>
-            <a href="https://u.duboku.io/vodtype/4.html">©独播库</a>
-            <a href="https://www.mxdmp.com/">mxdmp</a>
-           <a href="https://www.mgtv123.com/">mgtv123</a>
             
-        </div>
-        <div class="link-group">
-            <h3>邮箱</h3>
-            <a href="https://mail.163.com/#module=welcome.WelcomeModule%7C%7B%7D">163邮箱</a>
-            <a href="https://mail.126.com/#return">126邮箱</a>
-            <a href="https://mail.qq.com/">QQ邮箱</a>
-             <a href="https://gmail.com/">gmail</a>
-        </div>
-        
-        <div class="link-group">
-        
-        
-        
-           
-        
-       
-            <h3>云服务</h3>
-            <a href="https://dns.console.aliyun.com/?spm=5176.100251.111252.20.57b84f15nXWOIx#/dns/setting/lanhui.work">阿里云</a>
-            <a href="https://console.cloud.tencent.com/cns/detail/520672.xyz/records">腾讯云</a>
-            <a href="https://tongji.baidu.com/web5/welcome/login">百度统计</a>
-            <a href="https://ziyuan.baidu.com/dashboard/index">网站支持计</a>
-            <a href="https://my.racknerd.com/aff.php?aff=501">超划算VPS</a>
-            <a href="https://panel.chmlfrp.cn/">免费chmlfrp</a>
-            <a href="https://www.namesilo.com/">namesilo</a>
-             <a href="www.spaceship.com">spaceship</a>
-              <a href="https://dash.cloudflare.com/e39d9b0642a4f448ee7a55349cc64cf8">cloudflare</a>
-              <a href="https://onedrive.live.com/">onedrive</a>
-            <a href=" https://github.com/">  github </a>
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            
-        </div>
-        <div class="link-group">
-        
-            <h3>其他网站</h3>
-            <a href="http://lanhui.live/ulr/">短域</a>
-            <a href="http://lan-hui.com/">引导页</a>
-            <a href="https://picui.cn/upload">图床</a>
- 
-            
-            <a href="https://wwa.lanzoui.com/">蓝奏云</a>
-            <a href="https://zodgame.xyz/">zodgame</a>
-         <a href="https://sswz.spb.gov.cn/">邮政局申诉</a>
-        </div>
-       
+        </select>
+        <button class="search-button" onclick="search()">搜索</button>
     </div>
+    <div class="columns">
+        <div class="column">
+            <h2>视频网站</h2>
+            <ul class="links">
+                <li><a href="https://www.bilibili.com/" target="_blank"> B站</a></li>
+                <li><a href="https://www.dadagui.me/" target="_blank">DADAGUI</a></li>
+                <li><a href="https://www.xbshares.cc/" target="_blank"> 新小兵分享</a></li>
+                <li><a href="https://www.kgvod.com/" target="_blank"> 发烧屋</a></li>
+                <li><a href="https://www.haopb.com/" target="_blank"> 吧影院</a></li>
+                <li><a href="https://www.cilixiong.com/" target="_blank">磁力熊 </a></li>
+                <li><a href="https://xn--p3tv7h.com/" target="_blank"> 影搜</a></li>
+                <li><a href="https://www.keke2.app/" target="_blank"> 可可影视</a></li>
+                <li><a href="https://jqqzx.cc/" target="_blank">剧圈圈</a></li>
+                <li><a href="https://www.douyin.com/" target="_blank"> 抖音</a></li>
+                <li><a href="" target="_blank"> </a></li>
+                <li><a href="" target="_blank"> </a></li>
+                <li><a href="" target="_blank"> </a></li>
+                <li><a href="" target="_blank"> </a></li>
+
+
+
+                <li><a href="https://u.duboku.io/vodtype/1.html" target="_blank">独播库</a></li>
+                <li><a href="https://anime1.cc/" target="_blank">anime1</a></li>
+                <li><a href="https://www.mxdmp.com/" target="_blank">xdmp</a></li>
+                <li><a href="https://u.duboku.io/vodtype/1.html" target="_blank">独播库</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>社交媒体</h2>
+            <ul class="links">
+                <li><a href="https://shitoubaike.org/" style="color:blue;">石头百科</a></li>
+                <li><a href="https://www.zhihu.com" target="_blank">知乎</a></li>
+                <!-- 更多链接 -->
+                <li><a href="https://dl.kkys3.com:51111//" target="_blank"> 可可影视发布页</a></li>
+                <li><a href="https://link3.cc/jqqzx" target="_blank">剧圈圈发布页</a></li>
+            </ul>
+        </div>
+        <!-- 更多栏目 -->
+    </div>
+</div>
+<script>
+    function search() {
+        var query = document.getElementById('search-input').value;
+        var engine = document.getElementById('search-engine').value;
+        var searchUrl = engine + encodeURIComponent(query);
+        window.open(searchUrl, '_blank');
+    }
+</script>
 </body>
 </html>
-
-        <!-- 其他链接组保持不变 -->
-        <!-- 添加更多链接组 -->
-    </div>
-</body>
-</html>
-
-
- 
- 
- 
-   
-</div>
-
-
-
-

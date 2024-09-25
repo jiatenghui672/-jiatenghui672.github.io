@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高端导航页面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-container {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .search-container input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .search-container select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #4cae4c;
+        }
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .column {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+        .column h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .column a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+        .column a:hover {
+            color: #5cb85c;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="输入搜索内容">
+        <select id="search-engine">
+            <option value="bing">Bing</option>
+            <option value="google">Google</option>
+            <option value="yandex">yandex</option>
+            <option value="yahoo">Yahoo</option>
+        </select>
+        <button onclick="submitSearch()">搜索</button>
+    </div>
+
+    <div class="links-container">
+        <div class="column">
+            <h2>影视网站</h2>
+
+
+
+
+            <a href="https://www.bilibili.com/" target="_blank"> B站    </a>
+            <a href="https://u.duboku.io/vodtype/1.html" target="_blank">独播库</a>
+            <a href="https://anime1.cc/" target="_blank">anime1</a>
+            <a href="https://www.mxdmp.com/" target="_blank">xdmp</a>
+            <a href="https://www.bilibili.com/" target="_blank"> B站    </a>
+            <a href="" target="_blank">     </a>
+            <a href="" target="_blank">     </a>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="column">
+            <h2>社交媒体</h2>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <!-- 更多链接 -->
+        </div>
+        <!-- 更多栏目 -->
+    </div>
+
+    <script>
+        function submitSearch() {
+            let query = document.getElementById('search-box').value;
+            let engine = document.getElementById('search-engine').value;
+            let searchUrl = '';
+
+            switch (engine) {
+                case 'bing':
+                    searchUrl = 'https://www.bing.com/search?q=' + encodeURIComponent(query);
+                    break;
+                case 'google':
+                    searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+                    break;
+                case 'yandex.ee':
+                    searchUrl = 'https://yandex.eu/search/?text=yandex.ee' + encodeURIComponent(query);
+                    break;
+                case 'yahoo':
+                    searchUrl = 'https://search.yahoo.com/search?p=' + encodeURIComponent(query);
+                    break;
+                default:
+                    searchUrl = 'https://www.bing.com/search?q=' + encodeURIComponent(query);
+                    break;
+            }
+
+            window.open(searchUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
