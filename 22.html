@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大气导航页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+        .search-engine-select {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            outline: none;
+            cursor: pointer;
+        }
+        .search-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .search-btn:hover {
+            background-color: #4cae4c;
+        }
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .link-category {
+            flex-basis: 50%;
+            padding: 10px;
+        }
+        .link-category h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .link-category a {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+            text-decoration: none;
+        }
+        .link-category a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search-box" class="search-box" placeholder="输入搜索内容">
+            <select id="search-engine" class="search-engine-select">
+                <option value="bing">Bing</option>
+                <option value="google">Google</option>
+                <option value="baidu">Baidu</option>
+                <option value="yahoo">Yahoo</option>
+            </select>
+            <button class="search-btn" onclick="submitSearch()">搜索</button>
+        </div>
+
+        <div class="links-container">
+            <div class="link-category">
+                <h2>视频网站</h2>
+                <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                <a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a>
+                <a href="https://www.twitch.tv" target="_blank">Twitch</a>
+            </div>
+            <div class="link-category">
+                <h2>社交媒体</h2>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+            <!-- 更多栏目可以在这里添加 -->
+        </div>
+    </div>
+
+    <script>
+        function submitSearch() {
+            let query = document.getElementById('search-box').value;
+            let engine = document.getElementById('search-engine').value;
+            let searchUrl = '';
+            switch (engine) {
+                case 'bing':
+                    searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+                    break;
+                case 'google':
+                    searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+                    break;
+                case 'baidu':
+                    searchUrl = `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`;
+                    break;
+                case 'yahoo':
+                    searchUrl = `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`;
+                    break;
+                default:
+                    searchUrl
