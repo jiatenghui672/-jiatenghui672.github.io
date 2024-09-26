@@ -1,27 +1,28 @@
-<div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+                    <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
 
                         <div class="url-body default">
-                            <a href="https://sswz.spb.gov.cn/" target="_blank" data-id="3300"
-                                data-url="https://sswz.spb.gov.cn/" class="card no-c  mb-4 site-3300"
+                            <a href="https://chatglm.cn/main/alltoolsdetail" target="_blank" data-id="1996"
+                                data-url="https://chatglm.cn/main/alltoolsdetail" class="card no-c  mb-4 site-1996"
                                 data-toggle="tooltip" data-placement="bottom" title="123321">
                                 <div class="card-body">
                                     <div class="url-content d-flex align-items-center">
                                         <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/zhihu.png" data-src="ico/zhihu.png"
-                                                onerror="javascript:this.src='ico/zhihu.png'" alt="邮政投诉">
+                                            <img class="lazy" src="ico/ITzj.png" data-src="ico/ITzj.png"
+                                                onerror="javascript:this.src='ico/ITzj.png'" alt="智谱清言">
                                         </div>
                                         <div class="url-info flex-fill">
                                             <div class="text-sm overflowClip_1">
-                                                <strong>邮政投诉</strong>
+                                                <strong>智谱清言</strong>
                                             </div>
-                                            <p class="overflowClip_1 m-0 text-muted text-xs">123321</p>
+                                            <p class="overflowClip_1 m-0 text-muted text-xs">123321
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
+                               </div>
                             </a>
-                            <a href="https://sswz.spb.gov.cn/" class="togo text-center text-muted is-views" data-id="3300"
-                                data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                            <a href="https://chatglm.cn/main/alltoolsdetail" class="togo text-center text-muted is-views"
+                                data-id="1996" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
                                     class="iconfont icon-goto"></i></a>
                         </div>
                     </div>
