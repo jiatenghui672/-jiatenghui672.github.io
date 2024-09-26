@@ -1,140 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>炫酷导航栏</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
-    }
-    .navbar {
-        background-color: #333;
-        overflow: hidden;
-    }
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: #555;
-    }
-    .dropdown {
-        float: left;
-        overflow: hidden;
-    }
-    .dropdown .dropbtn {
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-    }
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-    .dropdown-content a:hover {
-        background-color: #ddd;
-    }
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    .search-container {
-        float: right;
-    }
-    .search-container input[type="text"] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
-    }
-    .search-container button {
-        float: right;
-        padding: 6px 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #ddd;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-    }
-    .search-container button:hover {
-        background: #ccc;
-    }
-    .columns {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .column {
-        flex: 1;
-        max-width: 20%;
-    }
-    .column h2 {
-        color: #333;
-        text-align: center;
-    }
-    .column a {
-        display: block;
-        margin: 10px;
-        padding: 10px;
-        background-color: #fff;
-        color: #333;
-        text-decoration: none;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        transition: transform 0.3s ease;
-    }
-    .column a:hover {
-        transform: translateY(-5px);
-    }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.search-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.column {
+  width: 200px;
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.column:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
 
-<div class="navbar">
-    <div class="search-container">
-        <form action="https://www.google.com/search" method="get" target="_blank">
-            <input type="text" name="q" placeholder="Search...">
-            <button type="submit">Search</button>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="changeSearchEngine()">Engine ▼</button>
-                <div class="dropdown-content">
-                    <a href="#" onclick="changeSearchEngine('https://www.google.com/search')">Google</a>
-                    <a href="#" onclick="changeSearchEngine('https://www.bing.com/search')">Bing</a>
-                    <a href="#" onclick="changeSearchEngine('https://www.duckduckgo.com/')">DuckDuckGo</a>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <h2>栏目一</h2>
-            <a href="#">链接1</a>
-            <a href="#">链接2</a>
-            <a href="#">链接3</a>
-            <a href="#">链接4</a>
-        </div>
-        <div class="column">
-            <h2>栏目二</h2>
-            <a href="#">链接1
+<div class="search-container">
+  <input type="text" id="searchBox" placeholder="Search.." name="search">
+  <select id="engineSelect">
+    <option value="https://www.google.com/search?q=">Google</option>
+    <option value="https://www.bing.com/search?q=">Bing</option>
+    <option value="https://www.yahoo.com/search?p=">Yahoo</option>
+  </select>
+  <button onclick="search()">Search</button>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  <!-- Add more columns as needed -->
+</div>
+
+<script>
+function search() {
+  var searchBox = document.getElementById('searchBox');
+  var engineSelect = document.getElementById('engineSelect');
+  var searchQuery = searchBox.value;
+  var selectedEngine = engineSelect.options[engineSelect.selectedIndex].value;
+  window.location.href = selectedEngine + searchQuery;
+}
+</script>
+
+</body>
+</html>
