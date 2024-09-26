@@ -1,28 +1,120 @@
+
+
+                    
                     <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
 
                         <div class="url-body default">
-                            <a href="https://chatglm.cn/main/alltoolsdetail" target="_blank" data-id="1996"
-                                data-url="https://chatglm.cn/main/alltoolsdetail" class="card no-c  mb-4 site-1996"
-                                data-toggle="tooltip" data-placement="bottom" title="123321">
+                            <a href="http://www.9dmgamemod.com/" target="_blank" data-id="725"
+                                data-url="http://www.9dmgamemod.com/" class="card no-c  mb-4 site-725" data-toggle="tooltip"
+                                data-placement="bottom" title="123321">
                                 <div class="card-body">
                                     <div class="url-content d-flex align-items-center">
                                         <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/ITzj.png" data-src="ico/ITzj.png"
-                                                onerror="javascript:this.src='ico/ITzj.png'" alt="智谱清言">
+                                            <img class="lazy" src="https://www.wpzys.ren/favicon.ico" data-src="https://www.wpzys.ren/favicon.ico" alt="9Dm单机下载">
                                         </div>
                                         <div class="url-info flex-fill">
                                             <div class="text-sm overflowClip_1">
-                                                <strong>智谱清言</strong>
+                                                <strong>9Dm单机下载</strong>
                                             </div>
-                                            <p class="overflowClip_1 m-0 text-muted text-xs">123321
+                                            <p class="overflowClip_1 m-0 text-muted text-xs">
+                                                123321
                                             </p>
                                         </div>
                                     </div>
-                               </div>
+                                </div>
                             </a>
-                            <a href="https://chatglm.cn/main/alltoolsdetail" class="togo text-center text-muted is-views"
-                                data-id="1996" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                            <a href="http://www.9dmgamemod.com/" class="togo text-center text-muted is-views" data-id="725"
+                                data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                    class="iconfont icon-goto"></i></a>
+                        </div>
+                    </div>
+                    <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                        <div class="url-body default">
+                            <a href="https://home.gamer.com.tw/creation.php?owner=s6842LBJ" target="_blank" data-id="725"
+                                data-url="https://home.gamer.com.tw/creation.php?owner=s6842LBJ" class="card no-c  mb-4 site-725" data-toggle="tooltip"
+                                data-placement="bottom" title="123321">
+                                <div class="card-body">
+                                    <div class="url-content d-flex align-items-center">
+                                        <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                            <img class="lazy" src="https://www.wpzys.ren/favicon.ico" data-src="https://www.wpzys.ren/favicon.ico" alt="哈姆雷特fq">
+                                        </div>
+                                        <div class="url-info flex-fill">
+                                            <div class="text-sm overflowClip_1">
+                                                <strong>哈姆雷特fq</strong>
+                                            </div>
+                                            <p class="overflowClip_1 m-0 text-muted text-xs">
+                                                123321
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://home.gamer.com.tw/creation.php?owner=s6842LBJ" class="togo text-center text-muted is-views" data-id="725"
+                                data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                    class="iconfont icon-goto"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                        <div class="url-body default">
+                            <a href="https://zodgame.xyz/" target="_blank" data-id="725"
+                                data-url="https://zodgame.xyz/" class="card no-c  mb-4 site-725" data-toggle="tooltip"
+                                data-placement="bottom" title="123321">
+                                <div class="card-body">
+                                    <div class="url-content d-flex align-items-center">
+                                        <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                            <img class="lazy" src="https://www.wpzys.ren/favicon.ico" data-src="https://www.wpzys.ren/favicon.ico" alt="zodgame">
+                                        </div>
+                                        <div class="url-info flex-fill">
+                                            <div class="text-sm overflowClip_1">
+                                                <strong>zodgame</strong>
+                                            </div>
+                                            <p class="overflowClip_1 m-0 text-muted text-xs">
+                                                123321
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://zodgame.xyz/" class="togo text-center text-muted is-views" data-id="725"
+                                data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                    class="iconfont icon-goto"></i></a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                        <div class="url-body default">
+                            <a href="https://sswz.spb.gov.cn/" target="_blank" data-id="725"
+                                data-url="https://sswz.spb.gov.cn/" class="card no-c  mb-4 site-725" data-toggle="tooltip"
+                                data-placement="bottom" title="123321">
+                                <div class="card-body">
+                                    <div class="url-content d-flex align-items-center">
+                                        <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                            <img class="lazy" src="https://www.wpzys.ren/favicon.ico" data-src="https://www.wpzys.ren/favicon.ico" alt="邮政局申诉">
+                                        </div>
+                                        <div class="url-info flex-fill">
+                                            <div class="text-sm overflowClip_1">
+                                                <strong>邮政局申诉</strong>
+                                            </div>
+                                            <p class="overflowClip_1 m-0 text-muted text-xs">
+                                                123321
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://sswz.spb.gov.cn/" class="togo text-center text-muted is-views" data-id="725"
+                                data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
                                     class="iconfont icon-goto"></i></a>
                         </div>
                     </div>
