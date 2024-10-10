@@ -475,19 +475,17 @@
 
                             <ul class="nav navbar-menu text-xs order-1 order-md-2">
                                 <!-- 一言 -->
+                                <style>
+                                    .highlight-text {
+                                        color: red; /* 设置字体颜色为红色 */
+                                        font-size: 2em; /* 设置字体大小为当前大小的1.5倍 */
+                                    }
+                                </style>
+                                
                                 <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
-                                    <script>
-                                        fetch('https://v1.hitokoto.cn')
-                                            .then(response => response.json())
-                                            .then(data => {
-                                                const hitokoto = document.getElementById('hitokoto_text')
-                                                hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                                hitokoto.innerText = data.hitokoto
-                                            })
-                                            .catch(console.error)
-                                    </script>
-                                    <div id="hitokoto"><a href="https://www.baidu.com/s?wd=%E5%85%88%E8%BE%88%E7%BA%AA%E5%BF%B5%E7%BD%91%E7%AB%99" target="_blank" id="hitokoto_text">先辈纪念网——英雄不朽！</a></div>
+                                    <div id="hitokoto"><a href="https://cn.bing.com/search?q=%E5%85%88%E8%BE%88%E7%BA%AA%E5%BF%B5%E7%BD%91&cvid=b3ee924c96e4466f963ce23445c6dbea&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg80gEINzkxNGowajSoAgiwAgE&FORM=ANAB01&PC=U531" target="_blank" id="hitokoto_text" class="highlight-text">先辈纪念网——英雄不朽！</a></div>
                                 </li>
+                                
                                 <!-- 一言 end -->
                                 <li class="nav-search ml-3 ml-md-4">
                                     <a href="javascript:" data-toggle="modal" data-target="#search-modal"><i
@@ -769,7 +767,7 @@
                         常用推荐
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>more+</a>
+                    <a class='btn-move text-xs' href='https://lan-hui.com/dh/index_old.html'>more+</a>
                 </div>
                 <div class="row ">
 
@@ -3366,7 +3364,7 @@
                         影视资源<span style="color:#f1404b"> · </span>在线
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href=''>more+</a>
+                    <a class='btn-move text-xs' href='https://lan-hui.com/ys.html'>more+</a>
                 </div>
                 <div class="row ">
                     <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
@@ -4588,6 +4586,21 @@
                         <a href="#" target="_blank" title="更多链接">更多链接</a>
                     </div>
                 </div>
+                <script src="https://giscus.app/client.js"
+                data-repo="lanhui672/lanhui672.Giscus"
+                data-repo-id="R_kgDOL_1gUg"
+                data-category="Announcements"
+                data-category-id="DIC_kwDOL_1gUs4Cfkpa"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="light"
+                data-lang="zh-CN"
+                crossorigin="anonymous"
+                async>
+                </script>
 
                 <div class="footer-inner" style="text-align: center;"></div>
                     <div class="footer-text">本站内容源自互联网，如有内容侵犯了您的权益，请联系删除相关内容。联系邮箱：<a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hiliutongxu@qq.com"
